@@ -1,9 +1,10 @@
+//Rica Noreen Esterado
 package bookRentalSystem;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class FictionBook extends Book{
+public class Romance extends Book{
 	public FictionBook(String title, String author, int yearPublished) {
 		super(title, author, yearPublished);
 		
@@ -15,8 +16,8 @@ public class FictionBook extends Book{
 	
 	public int calculateFine() {
 		
-		final int maximumFine = 10;
-		final int maxFineDays = 14;
+		final int maximumFine = 50;
+		final int maxFineDays = 15;
 		if (isRented()) {
 			LocalDate dueDate = LocalDate.now().plusDays(maximumFine);
 			LocalDate returnDate = LocalDate.of(2023, 9, 14);
@@ -27,10 +28,8 @@ public class FictionBook extends Book{
 			if (returnDate.isAfter(dueDate)) {
 				
 				long fineDays = ChronoUnit.DAYS.between(dueDate, returnDate);
-						
-						
+								
 			}
-			
 			
 		}
 		return 0;
