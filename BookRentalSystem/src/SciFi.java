@@ -40,6 +40,4 @@ public class SciFi extends Book {
 	}
 	
 	
-	
-	
 }
