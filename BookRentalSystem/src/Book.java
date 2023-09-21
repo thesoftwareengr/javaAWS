@@ -37,12 +37,16 @@ public class Book {
 	
 	@Override
 	public String toString() {
-		return "Title:" + this.title + "Author:" + this.author + "Year Published:" + this.yearPublished;
+		return "Title:" + this.title + ", Author:" + this.author + ", Year Published:" + this.yearPublished;
 	//	+ this.yearPublished
 	}
 	
 	public int calculateFine() {
 		return 0;
+	}
+	
+	public String borrow(){
+		return "";
 	}
 	
 	

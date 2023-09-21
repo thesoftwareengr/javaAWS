@@ -32,10 +32,9 @@ public class SciFi extends Book {
 	    return 0;
 	}
 
-	@Override
-	public String toString() {
+	public String borrow() {
 		return "You have borrowed "+this.getTitle()+"\n"
-				+ "Due date: "+LocalDate.now().plusDays(MAX_FINE_DAYS)+"\n"
+				+ "Please return by: "+LocalDate.now().plusDays(MAX_FINE_DAYS)+"\n"
 				+ "Otherwise, you will incur a daily fine of PHP"+FINE_PER_DAY;
 	}
 	

@@ -2,6 +2,8 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
 public class NonFictionalBook extends Book{
+	final int FINE_PER_DAY = 5;
+    final int MAX_FINE_DAYS = 14;
 
 	NonFictionalBook (String title, String author,int yearPublished) {
 		super(title, author, yearPublished);
@@ -27,6 +29,12 @@ public class NonFictionalBook extends Book{
 	    }
 	    
 	    return 0;
+	}
+
+	public String borrow() {
+		return "You have borrowed "+this.getTitle()+"\n"
+				+ "Please return by: "+LocalDate.now().plusDays(MAX_FINE_DAYS)+"\n"
+				+ "Otherwise, you will incur a daily fine of PHP"+FINE_PER_DAY;
 	}
 	
 	
