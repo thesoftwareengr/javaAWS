@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
 public class Romance extends Book{
-	public FictionBook(String title, String author, int yearPublished) {
+	public Romance(String title, String author, int yearPublished) {
 		super(title, author, yearPublished);
 		
 	}
