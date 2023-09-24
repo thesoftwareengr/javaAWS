@@ -5,7 +5,7 @@ public class guitarSongs extends Book {
 	final int FINE_PER_DAY = 15;
 	final int MAX_FINE_DAYS = 15;
 
-	SciFi(String title, String author, int yearPublished) {
+	guitarSongs(String title, String author, int yearPublished) {
 		super(title, author, yearPublished);
 	}
 
