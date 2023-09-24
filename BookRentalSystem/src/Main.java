@@ -65,6 +65,10 @@ public class Main {
 						break;
 					case "3": library.displayList(Integer.parseInt(input)-1, "Science Fiction");
 						break;
+					case "6": library.displayList(Integer.parseInt(input)-1, "Nihonggo");
+					break;
+					case "7": library.displayList(Integer.parseInt(input)-1, "Isekai");
+					break;
 					case "8": library.displayList(Integer.parseInt(input)-1, "Guitar Songs");
 					break;
 					// insert your assigned genre here
