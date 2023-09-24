@@ -5,8 +5,5 @@ public class Rental extends Book {
 		super(title, author, yearPublished);
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
-        
+
 }

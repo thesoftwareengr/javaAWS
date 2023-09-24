@@ -65,6 +65,8 @@ public class Main {
 						break;
 					case "3": library.displayList(Integer.parseInt(input)-1, "Science Fiction");
 						break;
+					case "8": library.displayList(Integer.parseInt(input)-1, "Guitar Songs");
+					break;
 					// insert your assigned genre here
 					default: System.out.println("Invalid input...");
 						flag=true;
@@ -91,7 +93,7 @@ public class Main {
 								booksBorrowed++;
 								System.out.println("You have successfully borrowed this book.");
 							}else {
-								System.out.println("Very sorry, this book is currently being rented by someone else");
+						    	System.out.println("Very sorry, this book is currently being rented by someone else");
 							}
 						}else {
 							System.out.println("Book not found...");
