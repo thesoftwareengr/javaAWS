@@ -11,12 +11,12 @@ public class Horror extends Book{
 	
 	@Override
 	public int calculateFine() {
-		final int FINE_PER_DAY = 10;
-		final int MAX_FINE_DAYS = 21;
+		final int FINE_PER_DAY = 6;
+		final int MAX_FINE_DAYS = 20;
 		
 		if(isRented()) {
 			LocalDate dueDate = LocalDate.now().plusDays(MAX_FINE_DAYS);
-			LocalDate returnDate = LocalDate.of(2023, 9, 29);
+			LocalDate returnDate = LocalDate.of(2023, 9, );
 			
 			System.out.println("Due date: " + dueDate);
 			System.out.println("Return date: " + returnDate);
@@ -29,6 +29,12 @@ public class Horror extends Book{
 		}
 		
 		return 0;
+	}
+	
+	public String borrow() {
+		return "You have borrowed "+this.getTitle()+"\n"
+				+ "Please return by: "+LocalDate.now().plusDays(MAX_FINE_DAYS)+"\n"
+				+ "Otherwise, you will incur a daily fine of PHP"+FINE_PER_DAY;
 	}
 	
 }
