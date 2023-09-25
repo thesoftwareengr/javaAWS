@@ -19,18 +19,26 @@ public class Library {
 		library.get(2).add(new SciFi("SciFi 3", "Author 6", 2005));
 		library.get(2).add(new SciFi("SciFi 4", "Author 7", 2006));
 		
-<<<<<<< HEAD
-		library.get(6).add(new SciFi("Isekai 1 ", "Author 1", 2006));
-		library.get(6).add(new SciFi("Isekai 2", "Author 2", 2006));
-		library.get(6).add(new SciFi("Isekai 3", "Author 3", 2006));
-		library.get(6).add(new SciFi("Isekai 4", "Author 4", 2006));
-=======
 		library.get(3).add(new SciFi("Romance 1", "Author 8", 2010));
 		library.get(3).add(new SciFi("Romance 2", "Author 9", 2011));
 		library.get(3).add(new SciFi("Romance 3", "Author 10", 2012));
 		library.get(3).add(new SciFi("Romance 4", "Author 11", 2013));
->>>>>>> cd5e09f80dbbec568f1b6a874f3590575e418c3d
 		
+		library.get(4).add(new SciFi("Horror 1", "Author 12", 2015));
+		library.get(4).add(new SciFi("Horror 2", "Author 13", 2011));
+		library.get(4).add(new SciFi("Horror 3", "Author 14", 2015));
+		library.get(4).add(new SciFi("Horror 4", "Author 15", 2019));	
+		
+		library.get(5).add(new SciFi("Nihongo N1", "Author 16", 2020));
+		library.get(5).add(new SciFi("Nihongo N2", "Author 16", 2021));
+		library.get(5).add(new SciFi("Nihongo N3", "Author 16", 2022));
+		library.get(5).add(new SciFi("Nihongo N4", "Author 16", 2023));	
+		
+		library.get(6).add(new SciFi("Isekai 1 ", "Author 1", 2023));
+		library.get(6).add(new SciFi("Isekai 2", "Author 2", 2020));
+		library.get(6).add(new SciFi("Isekai 3", "Author 3", 2019));
+		library.get(6).add(new SciFi("Isekai 4", "Author 4", 2016));
+
 		library.get(7).add(new guitarSongs("Love Songs", " Jireh Lim", 2007));
 		library.get(7).add(new guitarSongs("Rock", " Bamboo", 2008));
 		library.get(7).add(new guitarSongs("Maoy", "Moira dela Torree", 2010));
