@@ -43,6 +43,7 @@ public class Main {
 					+ "2 - Nonfiction             6 - Nihonggo\n"
 					+ "3 - Science Fiction        7 - Isekai\n"
 					+ "4 - Romance                8 - Guitar Songs\n"
+					+ "9 - Fantasy\n"
 					+ "EXIT to exit");
 			System.out.print("Please input your selection: ");
 			input = scanner.nextLine();
@@ -58,6 +59,7 @@ public class Main {
 			}else {
 
 				switch(input) {
+
 				//genre variable cannot yet be used here, still need to verify if its an int
 				case "1": library.displayList(Integer.parseInt(input)-1, "Fiction");
 				break;
@@ -74,10 +76,13 @@ public class Main {
 				case "7": library.displayList(Integer.parseInt(input)-1, "Isekai");
 				break;
 				case "8": library.displayList(Integer.parseInt(input)-1, "Guitar Songs");
-				break;
+				break;		
+				case "9": library.displayList(Integer.parseInt(input)-1, "Fantasy");
+					break;
 				// insert your assigned genre here
 				default: System.out.println("Invalid input...");
 				flag=true;
+
 				}
 
 				if(flag==false) {
