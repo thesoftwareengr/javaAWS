@@ -17,6 +17,11 @@ public class Library {
 		library.get(2).add(new SciFi("SciFi 2", "Author 5", 2005));
 		library.get(2).add(new SciFi("SciFi 3", "Author 6", 2005));
 		library.get(2).add(new SciFi("SciFi 4", "Author 7", 2006));
+		
+		
+		library.get(7).add(new guitarSongs("Love Songs", " Jireh Lim", 2007));
+		library.get(7).add(new guitarSongs("Rock", " Bamboo", 2008));
+		library.get(7).add(new guitarSongs("Maoy", "Moira dela Torree", 2010));
 		//add books of your assigned genre here
 	}
 	
