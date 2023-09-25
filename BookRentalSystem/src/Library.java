@@ -27,6 +27,10 @@ public class Library {
 		library.get(7).add(new guitarSongs("Love Songs", " Jireh Lim", 2007));
 		library.get(7).add(new guitarSongs("Rock", " Bamboo", 2008));
 		library.get(7).add(new guitarSongs("Maoy", "Moira dela Torree", 2010));
+		
+		library.get(8).add(new Fantasy("The Lord of The Rings", " JRR Tolkien", 1954));
+		library.get(8).add(new Fantasy("The Name of the Wind", " Patrick Rothfuss", 2007));
+		library.get(8).add(new Fantasy("The Lies of Locke Lamora", " Scott Lynch", 2006));
 		//add books of your assigned genre here
 	}
 	
