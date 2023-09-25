@@ -18,6 +18,10 @@ public class Library {
 		library.get(2).add(new SciFi("SciFi 3", "Author 6", 2005));
 		library.get(2).add(new SciFi("SciFi 4", "Author 7", 2006));
 		
+		library.get(6).add(new SciFi("Isekai 1 ", "Author 1", 2006));
+		library.get(6).add(new SciFi("Isekai 2", "Author 2", 2006));
+		library.get(6).add(new SciFi("Isekai 3", "Author 3", 2006));
+		library.get(6).add(new SciFi("Isekai 4", "Author 4", 2006));
 		
 		library.get(7).add(new guitarSongs("Love Songs", " Jireh Lim", 2007));
 		library.get(7).add(new guitarSongs("Rock", " Bamboo", 2008));
