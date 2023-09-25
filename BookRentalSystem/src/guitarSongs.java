@@ -1,21 +1,22 @@
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class NonFictionalBook extends Book {
-	final int FINE_PER_DAY = 5;
-	final int MAX_FINE_DAYS = 14;
+public class guitarSongs extends Book {
+	final int FINE_PER_DAY = 15;
+	final int MAX_FINE_DAYS = 15;
 
-	NonFictionalBook(String title, String author, int yearPublished) {
+	guitarSongs(String title, String author, int yearPublished) {
 		super(title, author, yearPublished);
 	}
 
+	@Override
 	public int calculateFine() {
-		final int FINE_PER_DAY = 5;
-		final int MAX_FINE_DAYS = 14;
+		final int FINE_PER_DAY = 30;
+		final int MAX_FINE_DAYS = 23;
 
 		if (isRented()) {
 			LocalDate dueDate = LocalDate.now().plusDays(MAX_FINE_DAYS);
-			LocalDate returnDate = LocalDate.of(2023, 9, 29);
+			LocalDate returnDate = LocalDate.of(2023, 10, 30);
 
 			System.out.println("Due Date: " + dueDate);
 			System.out.println("Return Date: " + returnDate);
