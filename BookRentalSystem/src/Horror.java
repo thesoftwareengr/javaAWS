@@ -11,12 +11,12 @@ public class Horror extends Book{
 	
 	@Override
 	public int calculateFine() {
-		final int FINE_PER_DAY = 6;
-		final int MAX_FINE_DAYS = 20;
+		final int FINE_PER_DAY = 7;
+		final int MAX_FINE_DAYS = 21;
 		
 		if(isRented()) {
 			LocalDate dueDate = LocalDate.now().plusDays(MAX_FINE_DAYS);
-			LocalDate returnDate = LocalDate.of(2023, 9, );
+			LocalDate returnDate = LocalDate.of(2023, 10, 4);
 			
 			System.out.println("Due date: " + dueDate);
 			System.out.println("Return date: " + returnDate);
